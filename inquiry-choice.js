@@ -1,1 +1,0 @@
-(()=>{const type=new URLSearchParams(location.search).get('inquiry');const field=document.querySelector('#category');if(field&&['technology','sample','oem','other'].includes(type))field.value=type;})();
