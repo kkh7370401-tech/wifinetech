@@ -1,0 +1,6 @@
+/* Restore the original pill-style language selector across locations. */
+.b-header .b-languages,.header .lang-switch,.b-entry-header .b-languages{display:flex;align-items:center;gap:0;border:1px solid #dce5ed;border-radius:999px;padding:3px;background:#f8fbfd;flex-shrink:0}
+.b-header .b-languages button,.header .lang-switch button,.b-entry-header .b-languages button{font-family:inherit;border:0;border-radius:999px;padding:7px 10px;font-size:12px;line-height:1.3;font-weight:800;color:#718193;background:transparent;cursor:pointer}
+.b-header .b-languages button.active,.header .lang-switch button.active,.b-entry-header .b-languages button.active{background:#073b62;color:#fff;border:0}
+.b-header .b-languages button:focus-visible,.header .lang-switch button:focus-visible{outline:2px solid #2698b5;outline-offset:2px}
+@media(max-width:760px){.b-header .b-languages button,.header .lang-switch button{padding:6px 7px}}
