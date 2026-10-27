@@ -1,0 +1,8 @@
+/* Korean prose wraps between words, preserving particles and compound terms. */
+html[lang="ko"] :is(p,li,dt,dd,h1,h2,h3,h4,figcaption,label,summary,blockquote){word-break:keep-all;overflow-wrap:normal;line-break:strict}
+html[lang="ko"] :is(p,li,dd,figcaption){text-wrap:pretty}
+html[lang="ko"] :is(td,th){word-break:keep-all;overflow-wrap:break-word}
+a[href^="mailto:"],input,textarea{overflow-wrap:anywhere}
+.content-application>div{min-width:0}
+.b-table{max-width:100%;overflow-x:auto}
+@media(max-width:900px){.application-domain .content-application{grid-template-columns:minmax(0,1fr)}}
