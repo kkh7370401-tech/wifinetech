@@ -1,0 +1,12 @@
+/* Cheongju hero only: original layout, background and links are preserved. */
+.hero-adsorption .hero-flow{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.hero-motion-pending .hero-adsorption .hero-content{opacity:0}
+.hero-adsorption.motion-playing .hero-kicker{animation:wft-fade .7s ease-out both}
+.hero-adsorption.motion-playing h1{animation:wft-rise 1s cubic-bezier(.16,1,.3,1) .12s both}
+.hero-adsorption.motion-playing h1 em{animation:wft-fade 1.15s ease-out .34s both}
+.hero-adsorption.motion-playing .hero-content>p{animation:wft-rise .85s cubic-bezier(.16,1,.3,1) .8s both}
+.hero-adsorption.motion-playing .actions{animation:wft-rise .8s cubic-bezier(.16,1,.3,1) 1.2s both}
+@keyframes wft-rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+@keyframes wft-fade{from{opacity:0}to{opacity:1}}
+@media(max-width:760px){.hero-adsorption .hero-flow{display:none}@keyframes wft-rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}}
+@media(prefers-reduced-motion:reduce){.hero-adsorption .hero-flow{display:none}.hero-motion-pending .hero-adsorption .hero-content{opacity:1}.hero-adsorption.motion-playing .hero-kicker,.hero-adsorption.motion-playing h1,.hero-adsorption.motion-playing h1 em,.hero-adsorption.motion-playing .hero-content>p,.hero-adsorption.motion-playing .actions{animation:none}}

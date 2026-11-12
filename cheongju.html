@@ -28,7 +28,11 @@
 <link href="assets/a2z-refinement.css" rel="stylesheet"/>
 <link href="assets/engineering-panel.css" rel="stylesheet"/>
 <link href="assets/tech-direction.css" rel="stylesheet"/><link href="assets/content-alignment.css" rel="stylesheet"/><link href="assets/oct20-refinement.css" rel="stylesheet"/><link href="assets/language-classic.css" rel="stylesheet"/><link href="assets/editorial-review.css" rel="stylesheet"/>
-<link href="assets/refinement-oct30.css?v=29" rel="stylesheet"/></head>
+<link href="assets/refinement-oct30.css?v=29" rel="stylesheet"/><link rel="preload" as="image" href="assets/hero-carbon.jpg" fetchpriority="high"/>
+<link rel="stylesheet" href="assets/hero-motion.css?v=34"/>
+<script>if(!matchMedia('(prefers-reduced-motion:reduce)').matches){document.documentElement.classList.add('hero-motion-pending');setTimeout(function(){document.documentElement.classList.remove('hero-motion-pending')},2500)}</script>
+<script src="assets/hero-motion.js?v=34" defer></script>
+</head>
 <body class="homepage" data-title-cn="WI-FINE TECH | 活性炭与功能材料技术企业" data-title-en="WI-FINE TECH | Activated Carbon &amp; Functional Materials" data-title-ko="와이파인텍 | 활성탄 및 기능성 소재 기술기업">
 <header class="header">
 <div class="container header-inner">
@@ -39,8 +43,8 @@
 </div>
 </header><div class="tech-location-bar"><div class="container"><strong><span data-cn="清州总部 · 材料与过滤技术" data-en="CHEONGJU · MATERIAL &amp; FILTER TECHNOLOGY" data-ko="청주 본사 · 소재 및 필터 기술">청주 본사 · 소재 및 필터 기술</span></strong><div><a href="index.html"><span data-cn="选择事业场所" data-en="Choose a location" data-ko="사업장 선택">사업장 선택</span></a><a href="yesan.html"><span data-cn="礼山工厂 ↗" data-en="Yesan Plant ↗" data-ko="예산 공장 ↗">예산 공장 ↗</span></a></div></div></div>
 <main id="top">
-<section class="hero" id="about">
-<div class="hero-media"></div>
+<section class="hero hero-adsorption" id="about">
+<div class="hero-media"></div><canvas id="flow" class="hero-flow" aria-hidden="true"></canvas>
 <div class="container hero-content">
 <div class="hero-kicker">ADVANCED ADSORPTION &amp; FILTRATION</div>
 <h1 data-en="WE CONTROL&lt;br&gt;WHAT YOU &lt;em&gt;CAN’T SEE.&lt;/em&gt;" data-ko="보이지 않는 유해물질을&lt;br&gt;&lt;em&gt;기술로 제어합니다.&lt;/em&gt;">보이지 않는 유해물질을<br/><em>기술로 제어합니다.</em></h1>
